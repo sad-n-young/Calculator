@@ -1,5 +1,5 @@
-response=['Welcome to smart calculator',' My name is Tejas',
-		'Thank you for utilizing me ',' Sorry, this is beyond my ability]
+response=['Welcome to smart calculator',' My name is AdCal',
+		'Thank you for utilizing me ',' Sorry, this is beyond my ability']
 
 # We create a variable to extract the commands given by the user
 def extract_from_text(text):
@@ -64,8 +64,8 @@ operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add,
 			'SUB':sub,'SUBTRACT':sub, 'MINUS':sub,
 			'DIFFERENCE':sub,'LCM':lcm,'HCF':hcf,
 			'PRODUCT':mul, 'MULTIPLY':mul,'MULTIPLICATION':mul,
-			'DIVISION':div,'MOD':mod,'REMAINDER'
-			:mod,'MODULAS':mod}
+                        'DIVIDE':div,'DIVISION':div,
+                        'MOD':mod,'REMAINDER':mod,'MODULAS':mod}
 
 # commands
 commands={'NAME':myname,'EXIT':end,'END':end,'CLOSE':end}
