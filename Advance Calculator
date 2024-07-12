@@ -1,5 +1,5 @@
 response=['Welcome to smart calculator',' My name is AdCal',
-		'Thank you for utilizing me ',' Sorry, this is beyond my ability']
+'Thank you for utilizing me ',' Sorry, this is beyond my ability']
 
 # We create a variable to extract the commands given by the user
 def extract_from_text(text):
@@ -28,23 +28,23 @@ def hcf(a,b):
 		H-=1
 
 # For addition
-def add(a,b):
+def add(float(a),float(b)):
 	return a+b
 
 # For subtraction
-def sub(a,b):
+def sub(float(a),float(b)):
 	return a-b
 
 # For multiplication
-def mul(a,b):
+def mul(float(a),float(b)):
 	return a*b
 
 # For division
-def div(a,b):
+def div(float(a),float(b)):
 	return a/b
 
 # For calculating the remainder
-def mod(a,b):
+def mod(float(a),float(b)):
 	return a%b
 
 # Response to command
@@ -60,12 +60,14 @@ def sorry():
 	print(response[3])
 
 # Operations - performed based on text tokens
-operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add,
+operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add,'+':add,
 			'SUB':sub,'SUBTRACT':sub, 'MINUS':sub,
-			'DIFFERENCE':sub,'LCM':lcm,'HCF':hcf,
-			'PRODUCT':mul, 'MULTIPLY':mul,'MULTIPLICATION':mul,
-                        'DIVIDE':div,'DIVISION':div,
-                        'MOD':mod,'REMAINDER':mod,'MODULAS':mod}
+			'DIFFERENCE':sub,'-':sub,
+			'LCM':lcm,
+			'HCF':hcf,
+			'PRODUCT':mul, 'MULTIPLY':mul,'MULTIPLICATION':mul,'*':mul,
+			'DIVIDE':div,'DIVISION':div,'/':div,
+			'MOD':mod,'REMAINDER':mod,'MODULAS':mod,'%':mod}
 
 # commands
 commands={'NAME':myname,'EXIT':end,'END':end,'CLOSE':end}
